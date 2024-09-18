@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(img/Image20240715150347.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #4D4D4DB0;
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu {
+    display: flex;
+    column-gap: 123px;
+    padding-bottom: 4px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #9B9DA0;
+}
+
+.menu .menu-item a:hover {
+    color: #CDB45B;
+    text-decoration: overline;
+}
+
+nav .menu .menu-item {
+    position: relative;
+}
+
+nav .menu .menu-item .dropdown {
+    position: absolute;
+    top: 110%;
+    padding-top: 15px;
+    display: flex;
+    column-gap: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+nav .menu .menu-item:hover .dropdown {
+    opacity: 1;
+}
+
+main {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.description {
+    padding-top: 200px;
+    display: flex;
+    column-gap: 25px;
+}
+
+.description p {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.advantage {
+    margin-bottom: 80px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: center;
+    color: #CDB45B;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 159px;
+}
+
+.advantages div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.advantages img {
+    width: 83px;
+    height: 83px;
+}
+
+.advantages p {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:  350px 430px;
+    grid-template-rows: 406px 360px;
+    column-gap: 23px;
+    row-gap: 20px;
+    justify-content: center;
+    margin-bottom: 104px;
+}
+
+.second {
+    grid-column-start: 1;
+}
+
+.gallery img {
+    filter: saturate(5%) grayscale(50%);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    filter: saturate(100%) grayscale(0%);
+}
+
+.first,
+.second,
+.third {
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    left: 11%;
+    bottom: 10%;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    color: #FFFFFF;
+    /* Убрать перенос */
+    white-space: nowrap;
+}
+
+.right {
+    position: absolute;
+    top: 70%;
+    left: 11%;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.center {
+    position: absolute;
+    left: 11%;
+    bottom: 10%;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.social_head {
+    margin-top: 116px;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54.86px;
+    text-align: center;
+    color: #CDB45B; 
+    margin-bottom: 65px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 237px;
+}
+
+.social div {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 280px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #4D4D4D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer nav {
+    background: #4D4D4DB0;
+    padding-top: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+footer nav .menu {
+    position: relative;
+}
+
+nav .menu .menu-item .dropdown {
+    position: absolute;
+    top: -200%;
+    padding-top: 15px;
+    display: flex;
+    column-gap: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+nav .menu .menu-item:hover .dropdown {
+    opacity: 1;
+}
+
+footer p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
